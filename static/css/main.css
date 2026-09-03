@@ -54,6 +54,42 @@ section .main-body{
     line-height: 2.4rem;
 }
 
+.project-figure {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.25rem;
+    max-width: 960px;
+    margin: 1.5rem auto 2.5rem;
+}
+
+.project-figure img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.35rem 1rem rgba(0, 0, 0, 0.12);
+}
+
+.project-figure-wide img {
+    width: 100%;
+}
+
+.project-figure-pair img {
+    width: calc(50% - 0.625rem);
+    object-fit: contain;
+}
+
+@media screen and (max-width: 575px) {
+    .project-figure-pair {
+        flex-direction: column;
+    }
+
+    .project-figure-pair img {
+        width: 100%;
+    }
+}
+
 
 .bg-gradient-primary-to-secondary-light {
     background: linear-gradient(45deg, #fcfcfc, #ffffff) !important;

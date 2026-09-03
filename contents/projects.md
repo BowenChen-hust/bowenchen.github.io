@@ -1,32 +1,48 @@
+- #### Shifting Adaptation from Weight Space to Memory Space: A Memory-Augmented Agent for Medical Image Segmentation
+<b>Abstract</b>: Medical image segmentation models often degrade across institutions, scanners, and patient populations. Although vision foundation models improve generalization, their adaptation commonly relies on task-specific weight updates, which introduce communication overhead and are difficult to extend continuously during deployment. We propose MemSeg-Agent, a memory-augmented segmentation framework that shifts adaptation from weight space to the native memory space of a frozen SAM2-family backbone. The framework unifies supervised, few-shot, federated, and test-time adaptation through static, retrieval-based, and working memories managed by a lightweight agentic controller. During deployment, clinician-triggered corrections are written into working memory only after the current case is evaluated and are reused for subsequent cases without updating model weights. Experiments on four public datasets show that static memory achieves competitive supervised segmentation under different annotation budgets, while clinician-triggered working memory substantially improves cross-domain performance under a strict prequential protocol. MemSeg-Agent also preserves source knowledge more effectively than weight-space continual adaptation and reduces federated communication by exchanging compact memory variables instead of the full backbone. These results establish memory-space adaptation as a scalable alternative for continuously adaptable medical image segmentation.
+
+<div class="project-figure project-figure-wide">
+<a href="MemSeg-Agent.pdf" target="_blank" rel="noopener"><img src="static/assets/projimage/MemSeg-Agent.png" alt="MemSeg-Agent framework"></a>
+</div>
+
 - #### Large Field-of-view Optosimulation Based on Spatial Light Modulator
 <b>Abstract</b>: In recent years, optogenetics has emerged as a powerful tool for controlling neuronal activity, significantly advancing neuroscience research into brain function. In particular, the combination of two-photon excitation with spatial light modulators (SLMs) in multiphoton holographic imaging systems has enabled deep-tissue, high-resolution, and low-phototoxicity neural control in living organisms. However, conventional SLM-based optical setups suffer from intrinsic limitations such as restricted pixel size, limited phase modulation range, diffraction efficiency decay, and aliasing artifacts. These issues significantly constrain the lateral displacement range of holographically generated foci, making it difficult to achieve wide-field, simultaneous neural stimulation without sacrificing spatial resolution—posing a critical bottleneck in large-scale, high-precision neural modulation.To address this challenge, this study proposes an optical design incorporating a lens array into the conventional SLM-based two-photon excitation system. By introducing a 3×3 lens array at the output plane of the SLM, the full hologram is spatially partitioned into several low-frequency sub-holograms, each relayed by an individual lens. This optical strategy effectively extends the field of view (FOV) of the stimulation plane without compromising image quality. Experimental results show that the maximum lateral displacement of the excitation pattern was increased from 0.7 mm (in the traditional setup) to over 2.1 mm, achieving a threefold improvement. Both simple dot-patterns and complex structured images were used to validate system performance. The proposed method demonstrated improved opto-stimulation field of view, while eliminating ghosting effects caused by aliasing in traditional systems.
 
-<img src="static/assets/projimage/SLM diagram.jpg" alt="System Setup" style="max-width:100%; height:auto;" class="mt-3 mb-3"> \
-<img src="static/assets/projimage/limit.jpg" alt="Enlagred FOV" style="max-width:50%; height:auto;" class="mt-3 mb-3"><img src="static/assets/projimage/enlarged.jpg" alt="Enlagred FOV" style="max-width:50%; height:auto;" class="mt-3 mb-3">
+<div class="project-figure project-figure-wide">
+<img src="static/assets/projimage/SLM diagram.jpg" alt="SLM system setup">
+</div>
+<div class="project-figure project-figure-pair">
+<img src="static/assets/projimage/limit.jpg" alt="Conventional field-of-view limit"><img src="static/assets/projimage/enlarged.jpg" alt="Enlarged field of view">
+</div>
 
 - #### Fourier Light-field Microscopy Based on Deep Learning with Enhanced Depth of Focus and Resolution
 <b>Abstract</b>: The two-stage microscopy technique based on Fourier Light Field Microscopy and VCD deep learning reconstruction strategies(F-VCD) has achieved remarkable success in fast 3D super-resolution reconstruction. However, it performs poorly in terms of refocusing depth. In practice, F-VCD can only achieve effective reconstruction within a 3µm thickness, which is less than the typical thickness of a cell. To address this, we have designed a new optical setup and a Vision Transformer-based network that combines two imaging modalities: one with 3 views MLA(high lateral resolution but low refocusing depth), and the other with 7 views MLA(high refocusing depth but low lateral resolution). This combination enables outputs with both high lateral resolution and high refocusing depth, expanding its potential applications. 
 
-<img src="static/assets/projimage/views_contrast.jpg" alt="Project Image" style="max-width:100%; height:auto;" class="mt-3 mb-3">
+<div class="project-figure project-figure-wide">
+<img src="static/assets/projimage/views_contrast.jpg" alt="Light-field microscopy view comparison">
+</div>
 
 - #### SR-PRNet: High-ﬁdelity Phase Reconstruction from only One High-level Feature Channel
 <b>Abstract</b>: Despite extensive efforts to apply deep learning to phase reconstruction in off-axis quantitative phase imaging (QPI), significant challenges persist as deep learning models tend to generate smoothed predictions rather than accurately representing ground truths. This phenomenon is well-known as ill-posed problem, wherein our specific scenario highlights the tendency of deep learning models to produce an averaged phase map of all potential high-resolution phase maps, rather than the phase map with the highest resolution. These challenges stem from the complexities of achieving precise input-output mapping, driven by domain disparities and the necessity for additional calibration images. Moreover, prevalent multi-level perception model architectures impose limitations on deep learning models to learn low-level phase features from interferograms in the spatial domain. Consequently, the redundant low-level feature channels exacerbates the degradation of model predictions. To address these issues, we propose Super Resolution Phase Reconstruction Net (SR-PRNet), a novel deep learning model structure. Unlike conventional methods that introduce low-level features directly, SR-PRNet dynamically generates these features without supervision, thereby mitigating the adverse effects of redundant channels. Specifically, SR-PRNet relies on the supervision of only one high-level feature channel, which is subsequently processed through a super-resolution tail guided by an adversarial loss. Our experimental results demonstrate that SR-PRNet outperforms the U-Net baseline, achieving superior high-ﬁdelity predictions and numerical criteria.
 
-<img src="static/assets/projimage/SR-PR.jpg" alt="our SR-PR net" style="max-width:50%; height:auto;" class="mt-3 mb-3">
-<img src="static/assets/projimage/contrast.png" alt="contrast between Unet baseline with SR-PR net" style="max-width:40%; height:auto;" class="mt-3 mb-3">
+<div class="project-figure project-figure-pair">
+<img src="static/assets/projimage/SR-PR.jpg" alt="SR-PRNet architecture"><img src="static/assets/projimage/contrast.png" alt="Comparison of U-Net baseline and SR-PRNet">
+</div>
 
 - #### Wide-band Metalenses Design Based on PB Phase
 Curriculum Design:Served as team member, School of Optical and Electronic Information, HUST (Sept.2023 - Jan.2024)
 
 <b>Abstract</b>: A metasurface is a new type of optical element composed of a two-dimensional array of periodic subwavelength structures, offering highly flexible optical response characteristics. By designing sophisticated subwavelength structures, metasurfaces can achieve arbitrary control over the phase, amplitude, and polarization of incident light. As a result, metasurfaces demonstrate great application potential in fields such as flat lenses, holographic imaging, beam shaping, and polarization devices. This paper presents the design of a broadband focusing meta-lens based on metasurfaces and geometric phase (Pancharatnam-Berry phase). The circular polarization conversion efficiency of the metasurface reaches over 96%, and it is capable of focusing circularly polarized light at different wavelengths. For incident light with wavelengths of 621 nm and 671 nm, the simulated focal length is around 50 micrometers, while for incident light with a wavelength of 721 nm, the simulated focal length is approximately 45 micrometers, closely matching the theoretical value of 50 micrometers.
 
-<img src="static/assets/projimage/pb.png" alt="Project Image" style="max-width:45%; height:auto;" class="mt-3 mb-3">
-<img src="static/assets/projimage/pb1.jpg" alt="Project Image" style="max-width:50%; height:auto;" class="mt-3 mb-3">
+<div class="project-figure project-figure-pair">
+<img src="static/assets/projimage/pb.png" alt="PB-phase metalens design"><img src="static/assets/projimage/pb1.jpg" alt="PB-phase metalens result">
+</div>
 
 - #### Dammann Grating Simulation Design and Fabrication
 Curriculum Design:Served as deputy leader, School of Optical and Electronic Information, HUST (Sept.2023 - Jan.2024)
 
 <b>Abstract</b>: The Dammann grating is a novel type of binary optical device capable of generating beam-splitting arrays with any desired number of beams using only two distinct height distributions on its surface. Its simplicity and efficiency in beam splitting significantly reduce the cost and complexity of optical systems. Femtosecond laser direct writing technology is highly suitable for fabricating micro-optical devices due to its high precision, excellent resolution, and minimal thermal effects.In this study, we combined Dammann grating theory with femtosecond laser direct writing technology. We simulated both one-dimensional and two-dimensional Dammann gratings, verifying the theoretical predictions regarding focusing efficiency and uniformity. Additionally, we developed a custom track processing code to fabricate 120 × 120 μm Dammann grating elements. The actual diffraction pattern was compared with the simulation results, confirming the accuracy of the simulations. Furthermore, we compared the beam-splitting performance of the Dammann grating with that of a multi-level phase grating, identifying potential limitations and proposing optimizations for the Dammann grating.
 
-<img src="static/assets/projimage/Dammann.jpg" alt="Project Image" style="max-width:40%; height:auto;" class="mt-3 mb-3">
-<img src="static/assets/projimage/laserwriting.png" alt="Project Image" style="max-width:40%; height:auto;" class="mt-3 mb-3">
+<div class="project-figure project-figure-pair">
+<img src="static/assets/projimage/Dammann.jpg" alt="Dammann grating simulation"><img src="static/assets/projimage/laserwriting.png" alt="Femtosecond laser writing result">
+</div>
