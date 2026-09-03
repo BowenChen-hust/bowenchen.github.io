@@ -75,6 +75,15 @@ section .main-body{
     width: 100%;
 }
 
+.project-figure-wide > a {
+    display: block;
+    width: 100%;
+}
+
+.project-figure-memseg {
+    max-width: 480px;
+}
+
 .project-figure-pair img {
     width: calc(50% - 0.625rem);
     object-fit: contain;
