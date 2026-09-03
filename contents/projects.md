@@ -12,5 +12,5 @@
 <img src="static/assets/projimage/SLM diagram.jpg" alt="SLM system setup">
 </div>
 <div class="project-figure project-figure-pair">
-<img src="static/assets/projimage/limit.jpg" alt="Conventional field-of-view limit"><img src="static/assets/projimage/enlarged.jpg" alt="Enlarged field of view">
+<img src="static/assets/projimage/limit.jpg" alt="Conventional field-of-view limit"><span class="project-figure-crop-top"><img src="static/assets/projimage/enlarged.jpg" alt="Enlarged field of view"></span>
 </div>

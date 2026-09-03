@@ -81,11 +81,16 @@ section .main-body{
 }
 
 .project-figure-memseg {
-    max-width: 100%;
+    width: 100%;
+    max-width: 960px;
 }
 
-.project-figure-pair img {
+.project-figure-pair > img,
+.project-figure-pair > .project-figure-crop-top {
     width: calc(50% - 0.625rem);
+}
+
+.project-figure-pair > img {
     object-fit: contain;
 }
 
@@ -93,12 +98,23 @@ section .main-body{
     align-items: flex-start;
 }
 
+.project-figure-crop-top {
+    display: block;
+    overflow: hidden;
+}
+
+.project-figure-crop-top img {
+    width: 100%;
+    transform: translateY(-3.5%);
+}
+
 @media screen and (max-width: 575px) {
     .project-figure-pair {
         flex-direction: column;
     }
 
-    .project-figure-pair img {
+    .project-figure-pair > img,
+    .project-figure-pair > .project-figure-crop-top {
         width: 100%;
     }
 }
