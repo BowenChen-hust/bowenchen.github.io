@@ -81,12 +81,16 @@ section .main-body{
 }
 
 .project-figure-memseg {
-    max-width: 480px;
+    max-width: 100%;
 }
 
 .project-figure-pair img {
     width: calc(50% - 0.625rem);
     object-fit: contain;
+}
+
+.project-figure-pair {
+    align-items: flex-start;
 }
 
 @media screen and (max-width: 575px) {
